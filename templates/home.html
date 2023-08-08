@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jovian Careers by Ruzait</title>
+    <title>Riyasad Library</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
 
+    <style>
+      .dsflex{
+        margin:50px;
+        display: flex;
+        flex-direction: row;
+      }
+
+
+      img{
+        padding: 10px;
+        height:200px;
+        width:auto;
+        
+      }
+    </style>
+  </head>
+  
   <body>
    <h1>
      Riyaa
    </h1>
+
+    <div>
+      <p>
+
+      </p>
+    </div>
+    <div class="dsflex">
+      {% for path in paths %}
+        <div class="mycard">
+          <img src= {{path}} alt={{path}}>
+        </div>
+    {% endfor %}
+    </div>
+    
   </body>
 </html>
