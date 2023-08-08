@@ -2,16 +2,23 @@
 <html>
   <head>
     <title>Riyasad Library</title>
+    <link rel="icon" type="image/x-icon" href="static/img_20190208_wa0005_gpW_icon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <style>
+
+      
       .dsflex{
-        padding:20px;
+        box-sizing: border-box;
+        margin: 10px auto;
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
+      }
+      .mycard{
+        padding: 10px auto-flow;
       }
 
 
@@ -25,7 +32,7 @@
 
       img:hover{
         width: auto;
-        height: 100vh;
+        height: 80vh;
         margin: 0 auto;
       }
     </style>
@@ -41,7 +48,7 @@
 
       </p>
     </div>
-    <div class="dsflex">
+    <div class="dsflex container">
       {% for path in paths %}
         <div class="mycard">
           <img src= {{path}} alt={{path}}>
